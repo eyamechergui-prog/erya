@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <div>
+            <label for ="prenom">prenom</label>
+            <input type="text" required id="prenom" name=""  placeholder="saisir prenom">
+            <small class ="error">prenom obligatoire</small>
+        </div>
+        <div>
+            <label for ="nom">nom</label>
+            <input type="text" required id="nom" name="" placeholder="saisir nom">
+            <small class ="error">nom obligatoire</small>
+        </div>
+        <div>
+            <label for ="dateN">date de naissance</label>
+            <input type="number" required id="dateN" name="" placeholder="date de naissance">
+            <small class ="error">date de naissance obligatoire</small>
+        </div>
+        <div>
+            <label for ="sexe">sexe</label>
+            <input type="radio" id="H" name="sexe">
+            <label for="H"> H </label>
+            <input type="radio" id="F" name="sexe">
+            <label for="F"> F </label>
+        </div>  
+        <div>
+            <label> sans emploi</label>
+            <input type="checkbox" id="sans emploi" name="sans emploi">
+        </div>
+        <div>
+            <label for="pays">pays</label>
+            <select id="pays" name="pays">
+                <option value="Nabel">Nabel</option>
+                <option value="bizerte">Bizerte</option>
+                <option value="tunis">Tunis</option>
+                <option value="sfax">Sfax</option>
+                <option value="manouba">Manouba</option>
+                <small class ="error">pays obligatoire</small>
+            </select>
+        </div>
+        <div>
+            <button type="button" onclick="afficher()">phrase</button>
+        </div>
+        <div>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <small class ="error">message obligatoire</small>
+        </div>
+    </form>
+    <script src="ex10.js"></script>
+</body>
+</html>

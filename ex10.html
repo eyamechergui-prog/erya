@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="afficher"></span>
+    <script>
+        mois=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+        n=parseInt(prompt("entrez un numéro de mois (1-12) :"));
+        if(isNaN(n) || n<1 || n>12){
+            document.getElementById("afficher").innerText="vérifier le numero du mois"
+        }
+        else{
+            document.getElementById("afficher").innerText=" le mois est :" +mois[n-1];
+        }
+    </script>
+</body>
+</html>
