@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple Age</title>
+</head>
+<body>
+    <script>
+        var x=prompt("entrez un entier");
+        var y=prompt("entrez un autre entier");
+        var ok=prompt("veuillez entrer votre choix (+ - * / )");
+        x=parseInt(x);
+        y=parseInt(y);
+        switch(ok){
+            case"+": {
+                alert(x+y);
+                break;
+            }
+        case"-":{
+            alert(x-y);
+            break;
+        } 
+    case"*": {
+        alert(x*y);
+        break;
+    }   
+    case"/": {
+        alert(x/y);
+        break;
+    }
+    }
+    </script>
+</body>
+</html>
